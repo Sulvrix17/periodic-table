@@ -1,0 +1,158 @@
+html {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+    user-select: none;
+}
+
+:root {
+    --color-1: #84d435;
+    --color-2: #d47704;
+    --color-3: #e9ac1e;
+    --color-4: #e35e95;
+    --color-5: #bf8348;
+    --color-6: #df2336;
+    --color-7: #0475d7;
+    --color-8: #05c9af;
+    --color-9: #9b5bcf;
+}
+
+
+#mode {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 90px;
+    font-size: 18px;
+    line-height: 15px;
+    text-align: center;
+    user-select: none;
+}
+
+@media (max-width: 600px) {
+    html {
+        width: 600px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 0;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+    margin-bottom: -10px;
+}
+
+
+#periodic {
+    margin: 0 auto;
+    border-spacing: 3px;
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    #periodic {
+        border-spacing: 2px;
+    }
+}
+
+@media (max-width: 700px) {
+    #periodic {
+        border-spacing: 1px;
+    }
+}
+
+#periodic tr td {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-style: outset;
+    border-color: #fdfdfd;
+    border-width: 3px;
+}
+
+
+.reactive {
+    background-color: var(--color-1);
+}
+
+.alkali {
+    background-color: var(--color-2);
+}
+
+.alkaline {
+    background-color: var(--color-3);
+}
+
+.lanthanoid {
+    background-color: var(--color-4);
+}
+
+.actinoid {
+    background-color: var(--color-5);
+}
+
+.transition {
+    background-color: var(--color-6);
+}
+
+.post-transition {
+    background-color: var(--color-7);
+}
+
+.metalloid {
+    background-color: var(--color-8);
+}
+
+.noble-gas {
+    background-color: var(--color-9);
+}
+
+
+@media (max-width: 700px) {
+    #periodic tr td {
+        border-width: 2px;
+    }
+}
+
+#periodic tr td.empty {
+    background-color: transparent;
+    cursor: auto;
+    border: none;
+    text-align: left;
+}
+
+#periodic tr.spacer td {
+    height: 10px;
+}
+
+#periodic tr td sup {
+    font-size: 11px;
+    display: block;
+    text-align: center;
+}
+
+#periodic tr td {
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+
+
+#desc {
+    padding: 0 30px;
+    color: #333;
+}
