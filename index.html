@@ -8,12 +8,35 @@
     <link rel="stylesheet" href="css/light.css" id="link">
 </head>
 
-<body>
-    <button onclick="colorMode()" id="mode" title="Change Color Mode"></button>
+<div>
+    <button onclick="colorMode()" id="mode" title="Color Mode"></button>
+    <button onclick="langMode()" id="lang" title="Language Mode"></button>
     <h1>Perodic Table of&nbsp;Elements</h1>
     <br>
     <br>
     <br>
+    <div class="description" id="eng">
+        <h3 class="alkali">Alkali Metals</h3>
+        <h3 class="alkaline">Alkaline earth Metals</h3>
+        <h3 class="lanthanoid">Lanthanoids</h3>
+        <h3 class="actinoid">Actionids</h3>
+        <h3 class="transition">Transition Metals</h3>
+        <h3 class="post-transition">Post-Transition Metals</h3>
+        <h3 class="metalloid">Metalloids</h3>
+        <h3 class="reactive">Reactive Nonmetals</h3>
+        <h3 class="noble-gas">Noble Gases</h3>
+    </div>
+    <div class="description" id="ar">
+        <h3 class="alkali">فلز قلوي</h3>
+        <h3 class="alkaline">فلز قلوي ترابي</h3>
+        <h3 class="lanthanoid">لانثانيدات</h3>
+        <h3 class="actinoid">اكتينيدات</h3>
+        <h3 class="transition">فلز انتقالي</h3>
+        <h3 class="post-transition">فلز بعد انتقالي</h3>
+        <h3 class="metalloid">شبه فلز</h3>
+        <h3 class="reactive">لا فلز</h3>
+        <h3 class="noble-gas">غاز نبيل</h3>
+    </div>
     <table id="periodic">
         <tr id="p1">
             <td id="H" title="Hydrogen" class="reactive"><sup>1</sup>H</td>
@@ -164,6 +187,6 @@
         </tr>
     </table>
     <script src="js/main.js"></script>
-</body>
+    </body>
 
 </html>

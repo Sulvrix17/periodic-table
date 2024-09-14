@@ -3,6 +3,7 @@ html {
     font-family: sans-serif;
     background-color: #444;
     user-select: none;
+    box-sizing: border-box;
 }
 
 :root {
@@ -31,6 +32,25 @@ html {
     cursor: pointer;
     padding: 15px;
     border-radius: 90px;
+    font-size: 18px;
+    line-height: 15px;
+    text-align: center;
+    user-select: none;
+}
+
+#lang {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 20px;
+    right: 90px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fdfdfd;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
     font-size: 18px;
     line-height: 15px;
     text-align: center;
@@ -150,7 +170,72 @@ h1 {
 }
 
 
-#desc {
+.description {
     padding: 0 30px;
-    color: #fdfdfd;
+    width: 200px;
+    color: #333;
+    line-height: 15px;
+    position: absolute;
+}
+
+
+.description h3 {
+    cursor: pointer;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.description .reactive {
+    color: var(--color-1);
+    background-color: transparent;
+}
+
+.description .alkali {
+    color: var(--color-2);
+    background-color: transparent;
+}
+
+.description .alkaline {
+    color: var(--color-3);
+    background-color: transparent;
+}
+
+.description .lanthanoid {
+    color: var(--color-4);
+    background-color: transparent;
+}
+
+.description .actinoid {
+    color: var(--color-5);
+    background-color: transparent;
+}
+
+.description .transition {
+    color: var(--color-6);
+    background-color: transparent;
+}
+
+.description .post-transition {
+    color: var(--color-7);
+    background-color: transparent;
+}
+
+.description .metalloid {
+    color: var(--color-8);
+    background-color: transparent;
+}
+
+.description .noble-gas {
+    color: var(--color-9);
+    background-color: transparent;
+}
+
+
+#eng {
+    display: block;
+    text-align: center;
+}
+
+#ar {
+    text-align: center;
+    display: none;
 }
